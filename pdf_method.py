@@ -33,13 +33,13 @@ def PDF_Merge(filelist,file_list):
     #file_list是文件的长度
     pdf_out = PdfFileWriter()
     #读取文件列表
-    for i in (file_list):
+    for i in range(file_list):
         temp = filelist[i]
         pdf_input = PdfFileReader(open(file=temp,mode='rb'))
         pdf_input_count = pdf_input.getNumPages()
         for m in range(pdf_input_count):
             pdf_out.addPage(pdf_input.getPage(m))
-        temp1 = "合并后的文件" + time.strftime('%Y-%m-%d') + "-"+ str(time.localtime().tm_hour) + "时-" + str(time.localtime().tm_min) \
+    temp1 = "e:/合并后的文件" + time.strftime('%Y-%m-%d') + "-"+ str(time.localtime().tm_hour) + "时-" + str(time.localtime().tm_min) \
                    + "分-"+  str(time.localtime().tm_sec) + "秒.pdf"
-        pdf_out.write(open(temp1, mode='wb'))
-        return ("1")
+    pdf_out.write(open(temp1, mode='wb'))
+    return ("1")

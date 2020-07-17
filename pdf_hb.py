@@ -1,5 +1,5 @@
 #PDF合并
-import time
+import time,sys
 from pdf_method import PDF_Merge
 from PyQt5 import QtGui,QtWidgets,QtCore
 
@@ -9,7 +9,7 @@ class PDF_hb(QtWidgets.QMainWindow):
         self.setupUI()
 
     def setupUI(self):
-        self.setWindowTitle("PDF合并V1.0 By 澄心元素 QQ：744537385")
+        self.setWindowTitle("PDF合并V2.0 By 澄心元素 QQ：744537385")
         self.setGeometry(550, 350, 540, 130)
         self.P_Qlable1()
         self.P_QButon1()
@@ -81,4 +81,5 @@ class PDF_hb(QtWidgets.QMainWindow):
 # if __name__ == '__main__':
 #     app = QtWidgets.QApplication(sys.argv)
 #     pdf_main = PDF_hb()
+#     pdf_main.show()
 #     app.exit(app.exec_())

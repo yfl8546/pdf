@@ -14,7 +14,7 @@ class PDF_Main(QtWidgets.QMainWindow):
 
     #主视图
     def setupUI(self):
-        self.setWindowTitle("PDF分割合并器V1.0 By 澄心元素 QQ：744537385")
+        self.setWindowTitle("PDF分割合并器V2.0 By 澄心元素 QQ：744537385")
         self.setGeometry(400,400,500,200)
         # self.setWindowIcon(QtGui.QIcon("ICO图片的地址"))
         self.M_Button1()
